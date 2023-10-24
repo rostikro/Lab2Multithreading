@@ -1,0 +1,71 @@
+Block 1. Algorithm execution speed without execution policy:
+1k:     0.002ms
+1m:     1.721ms
+10m:    17.307ms
+
+Block 2. Algorithm execution speed with execution policy:
+Sequenced policy (same as no policy):
+1k:     0.002ms
+1m:     1.745ms
+10m:    17.087ms
+
+Unsequenced policy:
+1k:     0.002ms
+1m:     1.670ms
+10m:    16.722ms
+
+Parallel sequenced policy:
+1k:     0.071ms
+1m:     0.752ms
+10m:    6.116ms
+
+Parallel unsequenced policy:
+1k:     0.032ms
+1m:     0.652ms
+10m:    6.223ms
+
+Block 3. Custom algorithm execution time:
+K = 1
+1k:     0.365ms
+1m:     1.835ms
+10m:    17.356ms
+
+K = 2
+1k:     0.693ms
+1m:     1.080ms
+10m:    9.614ms
+
+K = 4
+1k:     0.277ms
+1m:     0.577ms
+10m:    4.837ms
+
+K = 8
+1k:     0.354ms
+1m:     0.547ms
+10m:    3.987ms
+
+K = 16
+1k:     0.585ms
+1m:     0.622ms
+10m:    3.344ms
+
+K = 32
+1k:     0.852ms
+1m:     0.818ms
+10m:    3.173ms
+
+K = 64
+1k:     2.075ms
+1m:     1.639ms
+10m:    3.365ms
+
+K = 128
+1k:     2.768ms
+1m:     2.842ms
+10m:    4.838ms
+
+K = 256
+1k:     5.719ms
+1m:     5.949ms
+10m:    8.019ms
